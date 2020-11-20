@@ -381,7 +381,10 @@ body, html {
 
 @media (min-width: 500px) {
    
-
+    .main-container {
+        overflow: hidden;
+        min-height: 700px;
+    }
     .main-title {
        
         font-size: 3rem;  
@@ -403,8 +406,10 @@ body, html {
     .main-btn {
         
         font-size: 1.2rem;
-        width: 98%;
+        width: 75%;
         padding: 15px;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
     }
 
     .main-btn:hover {

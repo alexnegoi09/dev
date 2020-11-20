@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    height:100vh;
+    background-color:black;
+    font-family:'Segoe UI', sans-serif; 
+}
+
+/* navbar */
+
+.navbar {
+    display:flex;
+    background-color:rgba(255, 255, 255, 0.9);
+    font-family:"Montserrat", sans-serif;
+    font-size:1.2rem;
+    text-transform:uppercase;
+    justify-content:flex-end;
+    position:fixed;
+    width:100%;
+    box-shadow:0 2px 5px rgba(0,0,0,0.5);
+    z-index:10;
+}
+
+.navbar a {
+    text-decoration:none;
+    color:black;
+    display:inline-block;
+    position:relative;
+    right:1.2rem;
+    padding:0.8rem;
+}
+
+.navbar a:hover {
+   background-color:black;
+   color:white; 
+}
+
+/* home section */
+
+.home-container {
+    height:100vh;
+    background-image:url("../img/home.jpg");
+    background-color:black; 
+    background-position-y:-5rem;
+    background-size:cover; 
+    background-repeat:no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.home-container .home-text {
+    color:white;
+    font-size:3rem;
+    text-transform:uppercase;
+    font-family:"Montserrat", sans-serif;
+    text-align:center;
+}
+
+.home-container .home-text-small {
+    font-size:2rem;
+    text-align:center;
+    text-transform:lowercase;
+}
+
+/* about-section */
+
+.about-container {
+    margin-top:48px;
+}
+
+.about-container .about-text {
+    color:white;
+    font-family:"Montserrat", sans-serif;
+    font-size:2rem;
+    margin-top:96px;
+    margin-left:48px;
+    border-bottom:2px solid white;
+    display:inline-block; 
+}
+
+.about-container .image-container {
+    display:flex;
+}
+
+.about-container .image-container .about-text-small {
+    color:white;
+    font-size:1.2rem;
+    width:35%;
+    margin-top:48px;
+    margin-left:48px;
+    padding-top:48px;
+    line-height:1.5;
+}
+
+.about-container .image-container img {
+    width:225px;
+    height:275px;
+    display:inline-block;
+    margin-top:48px;
+    margin-left:48px;
+    border-radius:12%; 
+}
+
+.about-container .skills-title {
+    font-family:"Montserrat", sans-serif;
+    font-size:1.6rem;
+    color:white;
+    margin-top:48px;
+    margin-left:48px;
+    padding-top:48px;
+    border-bottom: 2px solid white;
+    display:inline-block;
+}
+
+.about-container .skill-text {
+    color:#ccc;
+    font-family:"Segoe UI", sans-serif;
+    margin-top:48px;
+    margin-left:48px;
+    letter-spacing:3px; 
+}
+
+.about-container .bar {
+    height:30px;
+    width:60%;
+    background-color:white;
+    margin-left:48px;
+}
+
+.about-container .bar .html-percentage {
+    height:100%;
+    width:85%;
+    background-color:#323740;
+}
+
+.about-container .bar .css-percentage {
+    height:100%;
+    width:80%;
+    background-color:#323740;
+}
+
+.about-container .bar .js-percentage {
+    height:100%;
+    width:75%;
+    background-color:#323740;
+}
+
+/* project section */
+
+.project-container .project-text {
+    font-size:2rem;
+    color:white;
+    margin-top:96px;
+    margin-left:48px;
+    border-bottom:2px solid white;
+    display:inline-block;
+}
+
+.project-container .thumbnail-container {
+    display:flex;
+    justify-content:space-evenly;
+    width:100%; 
+}
+
+.project-container .thumbnail-container .thumbnail img {
+    width:400px;
+    height:320px;
+    display:inline-block;
+    padding-top:96px; 
+}
+
+.project-container .thumbnail-container .thumbnail .thumbnail-text {
+    color:white;
+    font-family:"Segoe UI", sans-serif;
+    font-size:1.2rem;
+    text-align:center;
+    line-height:1.5;
+}
+
+.project-container .thumbnail-container .thumbnail {
+    position:relative;
+    transition:transform .3s; 
+}
+
+.project-container .thumbnail-container .thumbnail:hover {
+    transform:scale(1.2);
+    filter:grayscale(75%);
+}
+
+/* contact section */
+
+.contact-container {
+    margin-top:48px;
+}
+
+.contact-container .contact-text {
+    font-size:2rem;
+    color:white;
+    margin-top:48px;
+    margin-left:48px;
+    border-bottom:2px solid white;
+    display:inline-block;
+}
+
+.contact-container .contact-text-small {
+    color:white;
+    font-family:"Segoe UI", sans-serif;
+    font-size:1.2rem;
+    width:50%;
+    margin-top:1rem;
+    margin-left:48px;
+}
+
+.contact-container .social-links {
+    display:flex;
+    margin-top:1rem;
+}
+
+.contact-container .social-links .link {
+    font-size:1.6rem;
+    font-family:"Montserrat", sans-serif;
+    text-decoration:none; 
+    color:white;
+    display:inline-block;
+    margin-left:48px;
+    margin-top:1rem;
+    margin-bottom:96px;
+}
+
+.contact-container .social-links .link i {
+    display:inline-block;
+    margin-right:1rem;
+}
+
+.contact-container .social-links .link:hover {
+    color:#706d6d;
+}
+
+/* responsive */
+
+@media only screen and (max-width:900px) {
+    .navbar {
+        justify-content:center;
+    }
+
+    .navbar a {
+        font-size:1rem;
+        padding:0.5rem;
+    }
+
+    .about-container .image-container {
+        display:flex;
+        flex-direction:column;
+    }
+    
+
+    .about-container .image-container .about-text-small {
+        width:50%;
+        padding:0;
+    }
+
+    .contact-container .social-links {
+        flex-direction:column;
+    }
+
+    .contact-container .social-links .link {
+        margin-bottom:1rem;
+    }
+
+    .project-container .thumbnail-container {
+        flex-direction:column;
+        align-items:center;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .home-container {
+        background-image:none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

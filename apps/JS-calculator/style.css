@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background-color: #ccc;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    width: 500px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator .screen {
+    height:150px;
+    width: 100%;
+    background-color: black;
+}
+
+.calculator .screen .previous-operand, .calculator .screen .current-operand {
+    color: white;
+    word-break: break-all;
+}
+
+.calculator .screen .previous-operand {
+    font-size: 1.5rem;
+}
+
+.calculator .screen .current-operand {
+    font-size: 3rem;
+}
+
+.calculator .buttons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calculator .buttons > button {
+    width: 25%;
+    padding: 35px;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.calculator .buttons .custom {
+    width: 33.3%;
+}
+
+.calculator .buttons > button:hover {
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+.container {
+    height: inherit;
+    display: flex;
+}
+
+/* navbar styling */
+
+.nav {
+    height: inherit;
+    width: 200px;
+    min-width: 175px;
+    background-color: rgba(0, 0, 0, 0.85);
+    transition: width 0.2s ease-in-out;
+}
+
+.nav > .icon-container {
+    margin-bottom: 20px;
+    padding: 5px 0 5px 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.nav > .icon-container:first-child {
+    margin-top: 50px;
+}
+
+.nav > .icon-container a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #f5f5f5;
+} 
+
+.nav > .icon-container a .icon-label {
+    padding-left: 10px;
+    position: relative;
+    top: -3px;
+}
+
+.nav > .icon-container:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.nav > .icon-container:hover a {
+    color: black;
+}
+
+/* page container styling */
+
+.page-container {
+    height: inherit;
+}
+
+/* resize bar styling */
+
+.resize-bar {
+    height: inherit;
+    width: 8px;
+    background-color: #ccc;
+    cursor: ew-resize;
+}
+
+/* added with JS */
+
+.label-none {
+    display: none;
+}
+
+.nav-collapsed {
+    height: inherit;
+    width: 40px;
+    min-width: 35px;
+    background-color: rgba(0, 0, 0, 0.85);
+    transition: width 0.2s ease-in-out;
+}
+
+
+

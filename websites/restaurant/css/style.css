@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,900&family=Montserrat:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    background-color: #eee;
+}
+
+.main-container {
+    height: 100%;
+    background-image: url(../img/img1_sm.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+
+.main-title {
+    display: block;
+    margin: 2.5% 0 0 5%;
+    font-family: merriweather, serif;
+    color: white;
+}
+
+.main-header {
+    font-family: 'times new roman', sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    margin: 15% 0 0 5%;
+    color: white;
+}
+
+.secondary-header {
+    margin: 10% 0 0 5%;
+    font-family: montserrat, sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    color: white;
+}
+
+.main-btn {
+    text-decoration: none;
+    display: block;
+    margin: 5% auto;
+    font-family: montserrat, sans-serif;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.second-image {
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    opacity: 0.8;
+    margin-top: 8%;
+}
+
+.about-para {
+    font-family: merriweather, sans-serif;
+    font-weight: 600;
+    border-top: 1px solid lightslategray;
+    margin-top: 4%;
+}
+
+.about-para span {
+    font-family: montserrat, sans-serif;
+    font-weight: 100;
+    display: inline-block;
+    
+    margin-top: 20px;
+}
+
+.third-image {
+    display: block;
+    width: 250px;
+    height: 350px;
+    opacity: 0.9;
+    margin-bottom: 4%;
+}
+
+.about-para-2 {
+    font-family: merriweather, sans-serif;
+    font-weight: 600;
+    border-top: 1px solid lightslategray;
+}
+
+.about-para-2 span {
+    font-family: montserrat, sans-serif;
+    font-weight: 100;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 8%;
+}
+
+.menu-container {
+    display: flex;
+    background-image: url(../img/img5.jpg);
+    min-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fourth-image {
+    display: block;
+    width: 200px;
+    height: 300px;
+    opacity: 0.9;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.menu-para {
+    font-family: merriweather, sans-serif;
+    font-weight: 600;
+    margin-top: 4%;
+    min-width: 80%;
+    border-top: 1px solid lightslategray;
+    color: white;
+}
+
+.menu {
+    font-family: montserrat, sans-serif;
+    color: white;
+    list-style: none;
+    font-weight: 100;
+    width: 80%;
+    margin-bottom: 4%;
+}
+
+.menu-items {
+    list-style-type: none;
+}
+
+
+/* reservation section */
+    
+.reservation {
+    height: 20%;
+    min-width: 100%;
+    display: flex;
+
+}
+
+.reservation h1 {
+    font-family: montserrat, sans-serif;
+    font-weight: 200;
+    text-align: center;
+    min-width: 20%;
+    margin: 0 auto;
+    margin-bottom: 4%;
+}
+
+.second-btn {
+    text-decoration: none;
+    text-align: center;
+    font-family: montserrat, sans-serif;
+    color: black;
+    text-transform: uppercase;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.second-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.contact-info > * {
+    min-width: 33%;
+}
+
+.main-title-second {
+    font-family: merriweather, serif;
+    font-size: 1.2rem;
+}
+
+.main-title-second a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-container, .about-container, .about-2, .menu-container, .reservation, .contact-info {
+    cursor: default;
+}
+
+
+
+/* main section */
+
+@media (min-width: 150px) {
+   
+
+    .main-title {
+       
+        font-size: 1.5rem;  
+    }
+
+    .main-header {
+        
+        font-size: 2rem;
+    }
+
+    .secondary-header {
+
+        width: 90%;
+        min-width: 100px;
+        line-height: 1.5rem;
+    }
+
+    .main-btn {
+        
+        font-size: 0.9rem;
+        width: 98%;
+       
+    }
+
+    .main-btn:hover {
+        background-color: white;
+        color: black;
+    }
+
+
+     /* about section */
+    
+     .second-image {
+        width: 250px;
+        height: 350px;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+
+    .about-para {
+        align-self: center;
+        font-size: 1rem;
+        min-width: 80%;
+        line-height: 1.2rem;
+    }
+
+    .about-para span {
+        
+        font-size: 1rem;
+    }
+
+    .about-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .third-image {
+        width: 250px;
+        height: 350px;
+    }
+
+    .about-para-2 {
+        align-self: center;
+        font-size: 1rem;
+        min-width: 80%;
+        line-height: 1.2rem;
+    }
+
+    .about-para-2 span {
+
+        font-size: 1rem;
+    }
+
+
+    /* menu section */
+    
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .fourth-image {
+        width: 250px;
+        height: 350px;
+    }
+
+    .menu-para {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        border-top: 1px solid lightslategray;
+        color: white;
+    }
+
+    .menu {
+        align-self: center;
+        line-height: 2.5rem;
+        font-size: 1rem;
+    }
+
+
+     /* reservation section */
+    
+     .reservation {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .reservation h1 {
+    
+        font-size: 1.2rem;
+
+    }
+
+    .second-btn {
+        font-size: 1rem;
+        padding: 10px;
+        cursor: pointer;
+        width: 98%;
+    }
+    
+
+    /* contact section */
+
+    .contact-info {
+        padding: 15px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+
+    .main-title-second {
+        font-size: 1.2rem;
+        padding-bottom: 2px;
+        text-align: center;
+    }
+    
+    .address, .open-times {
+        font-weight: 100;
+        font-size: 0.63rem;
+        font-family: montserrat, sans-serif;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+    
+    .address *, .open-times * {
+        margin-bottom: 5px;
+    }
+
+    .main-title-second {
+        font-size: 1.2rem;
+    }
+    
+}
+
+
+
+/**/
+
+
+@media (min-width: 500px) {
+   
+
+    .main-title {
+       
+        font-size: 3rem;  
+    }
+
+    .main-header {
+        
+        font-size: 3.5rem;
+    }
+
+    .secondary-header {
+
+        width: 90%;
+        min-width: 100px;
+        line-height: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .main-btn {
+        
+        font-size: 1.2rem;
+        width: 98%;
+        padding: 15px;
+    }
+
+    .main-btn:hover {
+        background-color: white;
+        color: black;
+    }
+
+
+     /* about section */
+    
+     .second-image {
+        width: 450px;
+        height: 550px;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+
+    .about-para {
+        align-self: center;
+        font-size: 1.4rem;
+        min-width: 80%;
+        line-height: 1.5rem;
+    }
+
+    .about-para span {
+        
+        font-size: 1.4rem;
+    }
+
+    .about-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .third-image {
+        width: 450px;
+        height: 550px;
+    }
+
+    .about-para-2 {
+        align-self: center;
+        font-size: 1.4rem;
+        min-width: 80%;
+        line-height: 1.5rem;
+    }
+
+    .about-para-2 span {
+
+        font-size: 1.4rem;
+    }
+
+
+    /* menu section */
+    
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .fourth-image {
+        width: 450px;
+        height: 550px;
+    }
+
+    .menu-para {
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+        border-top: 1px solid lightslategray;
+        color: white;
+    }
+
+    .menu {
+        align-self: center;
+        line-height: 2.5rem;
+        font-size: 1.4rem;
+    }
+
+
+     /* reservation section */
+    
+     .reservation {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .reservation h1 {
+    
+        font-size: 2rem;
+
+    }
+
+    .second-btn {
+        font-size: 1.2rem;
+        padding: 15px;
+        cursor: pointer;
+    }
+    
+
+    /* contact section */
+
+    .contact-info {
+        padding: 15px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+
+    .main-title-second {
+        font-size: 1.5rem;
+        padding-bottom: 2px;
+        text-align: center;
+    }
+    
+    .address, .open-times {
+        font-weight: 100;
+        font-size: 0.9rem;
+        font-family: montserrat, sans-serif;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+    
+    .address *, .open-times * {
+        margin-bottom: 5px;
+    }
+
+    .main-title-second {
+        font-size: 1.2rem;
+    }
+    
+}
+
+
+
+/**/
+
+
+@media (min-width: 1000px) {
+    .main-container {
+        background-image: url(../img/img1.jpg);
+    }
+
+    .main-title {
+        margin-left: 5%;
+        font-size: 3rem;  
+    }
+
+    .main-header {
+        margin: 5% 0 0 5%;
+        font-size: 3.5rem;
+    }
+
+    .secondary-header {
+        margin-left: 5%;
+        margin-top: 2%;
+        width: 90%;
+        max-width: 800px;
+        line-height: 2.5rem;
+        font-size: 1.5rem;
+    }
+
+    .main-btn {
+        margin: 3% 0 0 5%;
+        font-size: 1.5rem;
+        width: 25%;
+        max-width: 460px;
+        padding: 16px;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+    }
+
+    .main-btn:hover {
+        background-color: white;
+        color: black;
+    }
+
+
+     /* about section */
+    
+     .second-image {
+        width: 450px;
+        height: 550px;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 100px;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .about-para {
+        justify-self: flex-end;
+        font-size: 1.7rem;
+        min-width: 20%;
+        margin-left: 10px;
+        line-height: 2.5rem;
+    }
+
+    .about-para span {
+        margin-left: 50px;
+        font-size: 1.7rem;
+        max-width: 550px;
+    }
+
+    .about-2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .third-image {
+        width: 450px;
+        height: 550px;
+        margin-left: 5%;
+        margin-bottom: 8%;
+    }
+
+    .about-para-2 {
+        align-self: center;
+        font-size: 1.7rem;
+        min-width: 20%;
+        line-height: 2.5rem;
+    }
+
+    .about-para-2 span {
+        max-width: 550px;
+        font-size: 1.7rem;
+        display: block;
+    }
+
+
+    /* menu section */
+    
+    .menu-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 100px;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    
+    .fourth-image {
+        width: 450px;
+        height: 550px;
+        margin-left: 5%;
+        margin-right: 10%;
+        margin-bottom: 8%;
+    }
+
+    .menu-para {
+        justify-self: flex-end;
+        font-size: 1.7rem;
+        min-width: 20%;
+        margin-bottom: 35px;
+        line-height: 3rem;
+    }
+
+    .menu {
+        max-width: 550px;
+        font-size: 1.7rem;
+        line-height: 3.5rem;
+        display: block;
+        
+        
+    }
+
+
+     /* reservation section */
+    
+     .reservation {
+
+        flex-direction: column;
+        align-items: center;
+        height: 35%;
+        min-height: 30%;
+    }
+    
+
+    .reservation h1 {
+    
+        font-size: 2.2rem;
+        text-align: center;
+        margin: 1% 0 2% 0;
+        width: 100%;
+    }
+
+    .second-btn {
+        margin: 1% auto;
+        font-size: 1.7rem;
+        width: 20%;
+        padding: 16px;
+        min-width: 255px;
+        cursor: pointer;
+    }
+    
+
+    /* contact section */
+
+    .contact-info {
+        flex-direction: row;
+        height: 15%;
+    }
+    
+    /* to be made responsive */
+    
+    .contact-info > * {
+        min-width: 33%;
+    }
+    
+    /* to be made responsive */
+    
+    .main-title-second {
+        font-family: merriweather, serif;
+        font-size: 2rem;
+    }
+    
+    .address, .open-times {
+        font-family: montserrat, sans-serif;
+        font-weight: 100;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+    
+    .address *, .open-times * {
+        margin-bottom: 10px;
+    }
+    
+    .main-header, .form, .contact-info {
+        cursor: default;
+    }
+
+}
+    
+
+
+
+
+
+

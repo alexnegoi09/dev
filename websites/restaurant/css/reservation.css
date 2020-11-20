@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,900&family=Montserrat:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    min-height: 500px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    .main-header {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        font-size: 1.4rem;
+        font-family: merriweather, sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        min-width: 240px;
+    }
+    
+    .main-header, .form {
+        margin-left: 5%;
+    }
+    
+    
+    /* form styling */
+    
+    .form p {
+        margin-top: 1%;
+    }
+    
+    .input {
+        border: 1px solid black;
+        display: inline-block;
+        padding: 0.5%; 
+        width: 40%;
+        transition: background-color 0.3s ease-in-out;
+        color: black;
+        cursor: pointer;
+    }
+    
+    .input::placeholder, .name, .date, .date::-webkit-calendar-picker-indicator, .how-many, .message {
+        font-size: 1rem;
+        font-family: montserrat, sans-serif;
+        outline: 0;
+    }
+    
+    .message {
+        resize: none;
+        cursor: pointer;
+    }
+    
+    .input:focus {
+        background-color: #fff9e8;
+    }
+    
+    .input::placeholder {
+        color: black;
+    }
+    
+    .btn {
+        display: inline-block;
+        margin-top: 1%;
+        font-family: montserrat, sans-serif;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        background-color: black;
+        border: 1px solid white;
+        color: white;
+        padding: 15px;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        background-color: white;
+        color: black;
+        outline: none;
+        border: 1px solid black;
+    }
+    
+    /* to be fixed */
+    
+    .how-many, .date {
+        width: 15%;
+        min-width: 240px;
+    }
+    
+    .name, .message {
+        min-width: 240px;
+    }
+    
+    /* to be fixed */
+    
+    /* contact section */
+    
+    .contact-info {
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 2%;
+        min-width: 240px;
+    }
+    
+    .main-title-second {
+        font-family: merriweather, serif;
+        font-size: 2rem;
+    }
+
+    .main-title-second a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .address, .open-times {
+        font-family: montserrat, sans-serif;
+        font-weight: 100;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    
+    .address *, .open-times * {
+        margin-bottom: 10px;
+    }
+    
+    .main-header, .form, .contact-info {
+        cursor: default;
+    }
+    
+
+
+
+/* responsive */
+
+
+@media (min-width: 250px) {
+    
+    .main-header {
+        font-size: 0.8rem;
+        padding-bottom: 0.5rem;
+        text-align: justify;
+    }
+
+    .main-header, .form {
+        margin-left: 1%;
+    }
+
+    /* form styling */
+
+    .form p {
+        margin-top: 1%;
+    }
+
+    .input {
+        padding: 1%; 
+        width: 100%;
+    }
+
+    .input::placeholder, .name, .date, .date::-webkit-calendar-picker-indicator, .how-many, .message {
+        font-size: 0.8rem;
+        padding: 1%;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 3px;
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .contact-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 15px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .main-title-second {
+        font-size: 1.2rem;
+        padding-bottom: 2px;
+        text-align: center;
+    }
+    
+    .address, .open-times {
+        font-weight: 100;
+        font-size: 0.63rem;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+    
+    .address *, .open-times * {
+        margin-bottom: 5px;
+    }
+
+}
+
+
+/**/
+
+
+@media (min-width: 600px) {
+    
+    .main-header {
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+    }
+
+    .main-header, .form {
+        margin-left: 2%;
+    }
+
+    /* form styling */
+
+    .form p {
+        margin-top: 1%;
+    }
+
+    .input {
+        padding: 1.2%; 
+        width: 70%;
+        max-width: 410px;
+    }
+
+    .input::placeholder, .name, .date, .date::-webkit-calendar-picker-indicator, .how-many, .message {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .btn {
+        width: 70%;
+        max-width: 410px;
+        margin-top: 0.5%;
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    .main-title-second {
+        font-size: 1.5rem;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+    
+    .address, .open-times {
+        font-weight: 100;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+    
+    .address *, .open-times * {
+        margin-bottom: 5px;
+    }
+
+}
+
+
+
+/**/
+
+
+
+@media (min-width: 1200px) {
+    .main-header {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        font-size: 1.4rem;
+    }
+    
+    .main-header, .form {
+        margin-left: 5%;
+    }
+    
+    
+    /* form styling */
+    
+    .form p {
+        margin-top: 0.7%;
+    }
+    
+    .input {
+        border: 1px solid black;
+        display: inline-block;
+        padding: 0.5%; 
+        width: 40%;
+        transition: background-color 0.3s ease-in-out;
+        color: black;
+        cursor: pointer;
+    }
+    
+    .input::placeholder, .name, .date, .date::-webkit-calendar-picker-indicator, .how-many, .message {
+        font-size: 1rem;
+        font-family: montserrat, sans-serif;
+        outline: 0;
+    }
+    
+    .message {
+        resize: none;
+        cursor: pointer;
+    }
+    
+    .input:focus {
+        background-color: #fff9e8;
+    }
+    
+    .input::placeholder {
+        color: black;
+    }
+    
+    .btn {
+        width: 14%;
+    }
+    
+    .btn:hover {
+        background-color: white;
+        color: black;
+        outline: none;
+        border: 1px solid black;
+    }
+    
+    /* to be fixed */
+    
+    .how-many, .date {
+        width: 15%;
+        min-width: 180px;
+    }
+    
+    .name, .message {
+        width: 37%;
+        min-width: 30%;
+    }
+    
+    /* to be fixed */
+    
+    /* contact section */
+    
+    .contact-info {
+        flex-direction: row;
+        height: 15%;
+    }
+    
+    /* to be made responsive */
+    
+    .contact-info > * {
+        min-width: 33%;
+    }
+    
+    /* to be made responsive */
+    
+    .main-title-second {
+        font-family: merriweather, serif;
+        font-size: 2rem;
+    }
+    
+    .address, .open-times {
+        font-family: montserrat, sans-serif;
+        font-weight: 100;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+    
+    .address *, .open-times * {
+        margin-bottom: 10px;
+    }
+    
+    .main-header, .form, .contact-info {
+        cursor: default;
+    }
+
+}
+
+
+
+
+
+
+
+
+

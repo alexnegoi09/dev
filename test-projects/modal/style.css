@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito, sans-serif; 
+}
+
+body {
+    height: 100vh;
+}
+
+.modal-container {
+    border: 1px solid black;
+    width: 60%;
+    max-width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.3s ease-in-out;
+    z-index: 10;
+    background-color: white;
+}
+
+.modal-container .modal-header {
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.modal-container .modal-header .close-btn {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1rem;
+}
+
+.modal-container .modal-header .close-btn:hover {
+    color: white;
+}
+
+.modal-container .modal-content {
+    padding: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform:scale(0);
+}
+
+.modal-active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.overlay-active {
+    transform: scale(1);
+}

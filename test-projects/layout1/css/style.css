@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "segoe ui", arial, sans-serif;
+}
+
+#main-container {
+    background-color: #eee;
+    width: 98%;
+    margin: 0 auto 20px auto;
+    overflow: auto;
+    border-radius: 10px;
+    position: relative;
+    top: 20px;
+}
+
+#main-container .main-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 50px;
+}
+
+#main-container .main-para {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 25px;
+}
+
+#second-container {
+    background-color: white;
+    margin: 0 auto;
+    width: 98%;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+#second-container img {
+    width: 960px;
+    min-width: 15%;
+    height: 500px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+#second-container .caption {
+    text-align: center;
+    padding: 15px 0 15px 0;
+}
+
+#main-container .second-para {
+    font-weight: bold;
+    margin: 50px 0 50px 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#main-container .main-list {
+    list-style-type: none;
+    width: 500px;
+    margin: 0 auto;
+}
+
+#main-container .main-list li {
+    margin-bottom: 20px;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+
+#main-container .main-list li span {
+    font-weight: bold;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+#main-container .final-para {
+    font-size: 1.1rem;
+    width: 60%;
+    margin: 100px auto 50px auto;
+}
+
+#main-container blockquote {
+    font-size: 1.1rem;
+    font-style: italic;
+    position: relative;
+    display: inline-block;
+    left: 70%;
+    margin-bottom: 50px;
+}

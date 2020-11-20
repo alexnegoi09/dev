@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 35%;
+    position: relative;
+}
+
+.container .content {
+    position: absolute;
+    padding: 20px;
+    display: none;
+}
+
+.container .content1 {
+    background-color: coral;
+}
+
+.container .content2 {
+    background-color: yellow;
+}
+
+.container .content3 {
+    background-color: #ccc;
+}
+
+.container .active {
+    display: block;
+}

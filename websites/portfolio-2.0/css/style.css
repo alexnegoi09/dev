@@ -202,12 +202,14 @@ html {
 }
 
 #projects-section .project {
+  display: inline-block;
   width: 400px;
   height: 200px;
   margin: 0 0 100px;
   text-align: center;
-  line-height: 350px;
+  line-height: 450px;
   font-size: 1.1rem;
+  text-decoration: none;
   background-size: cover;
   background-position: center;
   box-shadow: 2px 1px 5px black;
@@ -217,14 +219,13 @@ html {
 
 
 
-#projects-section .project a {
+#projects-section .project  {
   text-decoration: none;
   color: black;
-  display: inline-block;
+  
   font-size: 1.2rem;
-  height: 100%;
-  color: black;
-  margin-top: 14%;
+  
+  margin-top: 4%;
 }
 
 
@@ -459,3 +460,4 @@ html {
       font-size: 2rem;
     }
   }
+}

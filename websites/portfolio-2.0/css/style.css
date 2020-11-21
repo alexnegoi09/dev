@@ -215,20 +215,11 @@ html {
   box-shadow: 2px 1px 5px black;
   cursor: pointer;
   transition: 150ms ease-in-out;
-}
-
-
-
-#projects-section .project  {
   text-decoration: none;
   color: black;
-  
   font-size: 1.2rem;
-  
   margin-top: 4%;
 }
-
-
 
 #projects-section .dine-restaurant {
   background-image: url(../img/dine-restaurant.JPG);

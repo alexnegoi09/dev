@@ -124,16 +124,45 @@ body {
     min-width: 200px;
 }
 
-.headers {
+.intro-bg {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
 }
 
-.headers h1 {
-    min-width: 275px;
-    margin: 0 auto;
+.intro-bg h1 {
     font-size: 2rem;
     letter-spacing: 1px;
     padding: 30px; 
     font-weight: 400;
 }
+
+.intro-bg p {
+    font-size: 1.1rem;
+    padding: 15px;
+    color: gray;
+    line-height: 25px;
+    padding: 30px;
+}
+
+
+/* responsive images */
+
+
+.image {
+    display: block;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
 

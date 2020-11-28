@@ -78,7 +78,6 @@ body {
 .navbar {
     display: none;
     justify-content: space-evenly;
-    border-bottom: 1px solid green;
     align-items: center;
 }
 
@@ -87,7 +86,7 @@ body {
 }
 
 .menu-items .item {
-    padding: 15px;
+    padding: 15px 15px 20px 15px;
     text-decoration: none;
     font-size: 1.2rem;
     color: black;
@@ -121,7 +120,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-width: 200px;
+
 }
 
 .intro-bg {
@@ -135,16 +134,15 @@ body {
 .intro-bg h1 {
     font-size: 2rem;
     letter-spacing: 1px;
-    padding: 30px; 
+    padding: 15px; 
     font-weight: 400;
 }
 
 .intro-bg p {
     font-size: 1.1rem;
-    padding: 15px;
     color: gray;
     line-height: 25px;
-    padding: 30px;
+    padding: 30px 30px 60px 30px;
 }
 
 
@@ -154,15 +152,607 @@ body {
 .image {
     display: block;
     width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+
+
+/* main section */
+
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 98%);
+    padding-bottom: 50px;
+}
+
+.main-section-header {
+    padding: 100px 15px 50px 15px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.main-section-boxes {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-box {
+    padding-bottom: 50px;
+}
+
+.main-box h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 10px 0;
+}
+
+.main-box p {
+    color: gray;
+    line-height: 22px;
+}
+
+
+/* latest section */
+
+
+.latest-section {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    background-color: #eee;
+}
+
+.latest-section-header {
+    font-weight: 400;
+    padding: 100px 15px 50px 15px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.latest-box {
+    border-radius: 10px;
+    width: 82%;
+    margin: 30px auto;
+    background-color: white;
+}
+
+.latest-box:hover {
+    opacity: 0.5;
+}
+
+.latest-box blockquote {
+    font-size: 1rem;
+    padding: 15px 20px;
+    color: gray;
+}
+
+.latest-box h4 {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+}
+
+.latest-box p {
+    padding: 10px 20px 20px 20px;
+    font-size: 0.8rem;
+    line-height: 20px;
+}
+
+
+
+/* footer */
+
+
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(233, 26%, 24%);
+    
+}
+
+.section1,
+.section2,
+.section3,
+.section4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.section1 .footer-logo {
+    align-self: center;
+    padding: 15px;
+    
+
+}
+
+.section1 .social {
+    display: flex;
+    justify-content: center;
+}
+
+.section1 .social .fab {
+    color: hsl(0, 0%, 98%);
+    padding: 10px 10px 30px 10px;
+    font-size: 1.2rem;
+}
+
+.section1 .social .fab:hover {
+    color: hsl(136, 65%, 51%);
+}
+
+.section2 a, 
+.section3 a {
+    text-decoration: none;
+    color: hsl(0, 0%, 98%);
+    align-self: center;
+    padding: 10px;
+}
+
+.section2 a:hover,
+.section3 a:hover {
+    color: hsl(136, 65%, 51%);
+}
+
+.section3 a:last-child {
+    padding-bottom: 35px;
+}
+
+.section4 {
+    align-items: center;
+    padding: 10px 10px 50px 10px;
+}
+
+.section4 p {
+    padding-top: 30px;
+    color: hsl(0, 0%, 98%);
+}
+
+
+
+
+/* mobile styles */
+
+
+@media (min-width: 250px) {
+
+    .intro-bg h1,
+    .main-section-header,
+    .latest-section-header {
+        font-size: 1.75rem;
+    }
+}
+
+
+
+@media (min-width: 350px) {
+    .intro-bg h1,
+    .main-section-header,
+    .latest-section-header {
+        font-size: 2.1rem;
+    }
+}
+
+
+
+@media (min-width: 398px) {
+
+    .intro-bg h1 {
+        font-size: 2.2rem;
+    }
+
+    .intro-bg p {
+        font-size: 1.25rem;
+    }
+
+    .invite-btn {
+        font-size: 1.1rem;
+    }
+
+
+    .main-section-header {
+        font-size: 2.2rem;
+    }
+
+    .main-box h3 {
+        font-size: 1.25rem;
+    }
+
+    .main-box p {
+        font-size: 1.1rem;
+    }
+
+
+    .latest-section-header {
+        font-size: 2.2rem;
+    }
+
+    .latest-box blockquote {
+        font-size: 1.1rem;
+    }
+
+    .latest-box h4 {
+        font-size: 1.25rem;
+    }
+
+    .latest-box p {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (min-width: 420px) {
+    .intro-bg h1 {
+        padding: 20px 50px;
+    }
+}
+
+
+
+@media (min-width: 600px) {
+
+    .navbar-sm .logo-sm {
+        transform: scale(1.2);
+        padding: 30px;
+    }
+
+    .navbar-sm .menu-icon-sm {
+        transform: scaleY(1.2);
+    }
+    
+    .intro-bg h1 {
+        font-size: 2rem;
+        padding: 20px 150px;
+    }
+
+    .intro-bg p {
+        font-size: 1.25rem;
+        line-height: 35px;
+    }
+
+    .invite-btn {
+        font-size: 1.25rem;
+    }
+
+
+    .main-section-header {
+        font-size: 2rem;
+    }
+
+    .main-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .main-box p {
+        font-size: 1.2rem;
+        line-height: 30px;
+    }
+
+
+    .latest-section-header {
+        font-size: 2rem;
+    }
+
+    .latest-box blockquote {
+        font-size: 0.9rem;
+    }
+
+    .latest-box h4 {
+        font-size: 1.25rem;
+    }
+
+    .latest-box p {
+        font-size: 1.1rem;
+        line-height: 25px;
+    }
+
+    .latest-box {
+        margin: 50px auto;
+    }
+
+    .section1 .social .fab {
+        font-size: 1.75rem;
+    }
+
+    .section2,
+    .section3 {
+        font-size: 1.1rem;
+    }
+
+    .section4 .invite-btn {
+        font-size: 1.25rem;
+    }
+
+    .section4 p {
+        font-size: 1.25rem;
+    }
+
+    .section1 .footer-logo {
+        padding: 30px;
+        align-self: center;
+        transform: scale(1.2);
+    }
+}
+
+
+@media (min-width: 650px) {
+    .intro-bg h1 {
+        padding: 50px 200px;
+    }
+}
+
+
+@media (min-width: 900px) {
+
+    .intro-bg h1 {
+        padding: 50px 300px;
+    }
+
+    .main-box .icon {
+        transform: scale(1.2);
+        padding-bottom: 20px;
+    }
 }
 
 
 
 
 
+/* desktop styles */
 
 
+@media (min-width: 1000px) {
 
+    .navbar-sm {
+        display: none;
+    }
 
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 5px;
+    }
 
+    .navbar .logo {
+        padding-left: 125px;
+    }
+
+    .navbar .invite-btn {
+        margin: 10px 125px 0 0;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 1.05rem;
+    }
+
+    .intro-bg-sm {
+        display: none;
+    }
+    
+    .intro-bg {
+        cursor: default;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 100px;
+        background-image:url(../img/bg-intro-desktop.svg);
+        background-repeat: no-repeat;
+        min-width: 100%;
+        background-position-x: 60vw;
+        background-attachment: fixed;
+        background-color: hsl(0, 0%, 98%);
+        background-blend-mode: multiply;
+    }
+    
+    .intro-bg h1 {
+        font-size: 2.75rem;
+        padding: 150px 0 5px 125px; 
+        max-width: 500px;
+        font-weight: 400;
+    }
+    
+    .intro-bg p {
+        font-size: 1.25rem;
+        color: gray;
+        line-height: 30px;
+        padding: 30px 100px 0 120px;
+        max-width: 700px; 
+    }
+
+    .intro-bg .invite-btn {
+        max-width: 150px;
+        margin: 30px 0 100px 125px;
+        font-size: 1.05rem;
+    }
+
+    
+    /* responsive images */
+    
+    
+    .image {
+        display: block;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    
+    
+    /* main section */
+    
+    
+    .main-section {
+        cursor: default;
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 96%);
+        padding-bottom: 50px;
+    }
+    
+    .main-section-header {
+        padding: 100px 0 50px 120px;
+        text-align: left;
+        font-weight: 400;
+        font-size: 2.25rem;
+    }
+    
+    .main-section-boxes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        width: 100%;
+        padding: 20px 0 20px 120px;
+    }
+    
+    .main-box {
+        padding: 20px 50px 50px 0;
+        text-align: left;
+    }
+    
+    .main-box h3 {
+        font-weight: 400;
+        font-size: 1.25rem;
+        padding: 15px 0;
+    }
+    
+    .main-box p {
+        color: gray;
+        line-height: 27px;
+    }
+
+    .main-box .icon {
+        transition: opacity 0.15s ease-in-out;
+    }
+
+    .main-box .icon:hover {
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    
+    
+    /* latest section */
+    
+    
+    .latest-section {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+        background-color: #eee;
+    }
+    
+    .latest-section-header {
+        font-weight: 400;
+        padding: 100px 0 50px 125px;
+        text-align: left;
+        font-size: 2.25rem;
+    }
+
+    .latest-section-boxes {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 125px;
+    }
+    
+    .latest-box {
+        width: 20%;
+        border-radius: 10px;
+        background-color: white;
+        transition: opacity 0.15s ease-in-out;
+        margin-left: 0;
+    }
+    
+    .latest-box:hover {
+        opacity: 0.75;
+        cursor: pointer;
+    }
+    
+    .latest-box blockquote {
+        font-size: 1rem;
+        padding: 15px 20px;
+        color: gray;
+    }
+    
+    .latest-box h4 {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+    
+    .latest-box p {
+        padding: 10px 20px 20px 20px;
+        font-size: 0.8rem;
+        line-height: 20px;
+    }
+    
+    
+    
+    /* footer */
+    
+    
+    .main-footer {
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(233, 26%, 24%);
+        
+    }
+    
+    .section1,
+    .section2,
+    .section3,
+    .section4 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .section1 .footer-logo {
+        align-self: center;
+        padding: 15px;
+        
+    
+    }
+    
+    .section1 .social {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .section1 .social .fab {
+        color: hsl(0, 0%, 98%);
+        padding: 10px 10px 30px 10px;
+        font-size: 1.2rem;
+    }
+    
+    .section1 .social .fab:hover {
+        color: hsl(136, 65%, 51%);
+    }
+    
+    .section2 a, 
+    .section3 a {
+        text-decoration: none;
+        color: hsl(0, 0%, 98%);
+        align-self: center;
+        padding: 10px;
+    }
+    
+    .section2 a:hover,
+    .section3 a:hover {
+        color: hsl(136, 65%, 51%);
+    }
+    
+    .section3 a:last-child {
+        padding-bottom: 35px;
+    }
+    
+    .section4 {
+        align-items: center;
+        padding: 10px 10px 50px 10px;
+    }
+    
+    .section4 p {
+        padding-top: 30px;
+        color: hsl(0, 0%, 98%);
+    }
+    
+}
 

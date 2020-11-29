@@ -152,7 +152,7 @@ html {
 }
 
 #skills-subsection {
-  width: 40%;
+  width: 45%;
   margin: 0 auto;
 }
 
@@ -173,6 +173,7 @@ html {
   font-size: 1rem;
   letter-spacing: 2px;
   transition: 120ms ease-in-out;
+  text-shadow: 2px 1px 1px #000;
 }
 
 #skills-subsection span:hover {
@@ -193,6 +194,7 @@ html {
 
 #skills-subsection .responsive-bar span {
   width: 60%;
+  white-space: nowrap;
 }
 
 
@@ -389,7 +391,7 @@ html {
 
   #skills-subsection {
     width: 80%;
-  }
+  } 
 
   #projects-section {
     width: 80%;

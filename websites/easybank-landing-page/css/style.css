@@ -293,6 +293,7 @@ body {
     color: hsl(0, 0%, 98%);
     padding: 10px 10px 30px 10px;
     font-size: 1.2rem;
+    cursor: pointer;
 }
 
 .section1 .social .fab:hover {
@@ -319,6 +320,7 @@ body {
 .section4 {
     align-items: center;
     padding: 10px 10px 50px 10px;
+    cursor: default;
 }
 
 .section4 p {
@@ -477,32 +479,34 @@ body {
 
 
 @media (min-width: 650px) {
-    .intro-bg h1 {
-        padding: 50px 200px;
+
+    .intro-bg p {
+        width: 65%;
+    }
+
+    .main-box, .latest-box {
+        width: 60%;
+        align-self: center;
     }
 }
 
 
-@media (min-width: 900px) {
 
-    .intro-bg h1 {
-        padding: 50px 300px;
-    }
+@media (min-width: 900px) {
 
     .main-box .icon {
         transform: scale(1.2);
         padding-bottom: 20px;
     }
+
 }
-
-
 
 
 
 /* desktop styles */
 
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
 
     .navbar-sm {
         display: none;
@@ -548,7 +552,7 @@ body {
     .intro-bg h1 {
         font-size: 2.75rem;
         padding: 150px 0 5px 125px; 
-        max-width: 500px;
+        max-width: 1000px;
         font-weight: 400;
     }
     
@@ -601,12 +605,11 @@ body {
         flex-direction: row;
         justify-content: space-between;
         text-align: center;
-        width: 100%;
-        padding: 20px 0 20px 120px;
+        padding: 20px 50px 20px 120px;
     }
     
     .main-box {
-        padding: 20px 50px 50px 0;
+        padding: 20px 50px 20px 0;
         text-align: left;
     }
     
@@ -618,6 +621,7 @@ body {
     
     .main-box p {
         color: gray;
+        font-size: 1.1rem;
         line-height: 27px;
     }
 
@@ -742,5 +746,130 @@ body {
         color: hsl(0, 0%, 98%);
     }
     
+}
+
+
+
+
+@media (min-width: 1950px) {
+    
+    .navbar {
+        padding: 6px;
+    }
+    
+    .navbar .logo {
+        transform: scale(1.2);
+    }
+
+    .navbar .menu-items a {
+        font-size: 1.55rem;
+        margin-right: 5px;
+    }
+
+    .navbar .menu-items a:hover {
+        border-bottom: 3px solid hsl(192, 70%, 51%);
+    }
+
+    .navbar .invite-btn {
+        font-size: 1.55rem;
+        width: 250px;
+    }
+
+
+    .intro-bg h1 {
+        font-size: 3.5rem;
+    }
+
+    .intro-bg p {
+        font-size: 1.55rem;
+        line-height: 35px;
+        max-width: 800px;
+    }
+
+    .intro-bg .invite-btn {
+        font-size: 1.55rem;
+        min-width: 250px;
+    }
+
+    .main-section-header {
+        font-size: 3rem;
+    }
+
+    .main-section-boxes {
+        justify-content: space-between;
+    }
+
+    .main-box {
+     width: 22%;   
+    }
+    
+    .main-box h3 {
+        font-size: 1.75rem;
+    }
+    
+    .main-box p {
+        font-size: 1.25rem;
+        line-height: 27px;
+    }
+
+
+
+    
+    /* latest section */
+    
+   
+    
+    .latest-section-header {
+        font-size: 3rem;
+    }
+    
+    .latest-box blockquote {
+        font-size: 1.25rem;
+        padding: 15px 20px;
+        color: gray;
+    }
+    
+    .latest-box h4 {
+        font-size: 1.75rem;
+        padding: 10px 20px;
+    }
+    
+    .latest-box p {
+        padding: 10px 20px 20px 20px;
+        font-size: 1.25rem;
+        line-height: 27px;
+    }
+    
+    
+    
+    /* footer */
+    
+    .section1 .footer-logo {
+        transform: scale(1.2);
+    }
+
+    .section1 .social .fab {
+        color: hsl(0, 0%, 98%);
+        font-size: 1.75rem;
+    }
+    
+    .section2 a, 
+    .section3 a {
+        font-size: 1.25rem;
+    }  
+    
+    .section4 .invite-btn {
+        margin: 10px 125px 0 10px;
+        padding: 15px 20px;
+        min-width: 250px;
+        font-size: 1.55rem;
+    }
+
+    .section4 p {
+        padding: 30px 125px 0 0;
+        font-size: 1.25rem;
+        font-weight: 300;
+        color: hsl(0, 0%, 98%);
+    }
 }
 

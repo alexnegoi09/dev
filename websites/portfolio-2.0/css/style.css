@@ -42,7 +42,7 @@ html {
   font-size: 1.4rem;
   display: inline-block;
   color: white;
-  transition: 150ms ease-in-out;
+  transition: 100ms ease-in-out;
 }
 
 #navbar > p a:hover {
@@ -75,15 +75,17 @@ html {
   text-align: center;
   text-shadow:3px 1px 1px black;
   opacity: 0;
-  transition: 500ms ease-in;
+  transition: 300ms ease-in;
 }
 
 #main-image-container #main-header span {
   display: block;
   text-transform: lowercase;
   font-weight: 100;
-  letter-spacing: 10px;
-  font-family: roboto, arial;
+  letter-spacing: 5px;
+  font-family: 'times new roman', serif;
+  font-style: italic;
+  font-weight: bold;
 }
 
 
@@ -116,11 +118,16 @@ html {
 }
 
 #about-section .about-para img {
-  height: 300px;
-  width: 250px;
+  height: 400px;
+  width: 275px;
   display: inline-block;
   transform: rotate(360deg);
   border-radius: 10px;
+  transition: opacity 100ms ease-in-out;
+}
+
+#about-section .about-para img:hover {
+  opacity: 0.75;
 }
 
 #about-section .about-para p {
@@ -132,6 +139,7 @@ html {
   font-style: italic;
   font-weight: bold;
   font-size: 1.25rem;
+  text-align: center;
 }
 
 
@@ -206,6 +214,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 #projects-section .project {
@@ -227,6 +236,10 @@ html {
   font-size: 1.2rem;
   margin-top: 4%;
   border-radius: 10px;
+}
+
+#projects-section .project:last-child {
+  margin-bottom: 75px;
 }
 
 #projects-section .easybank {
@@ -270,6 +283,7 @@ html {
   margin-bottom: 30px;
   outline: none;
   border: 1px solid #ccc;
+  background-color: hsl(0, 0%, 98%);
   width: 100%;
   font-size: 1rem;
   font-family: inherit;
@@ -279,7 +293,7 @@ html {
 }
 
 #contact-section #main-form p .form-styling:focus {
-  background-color: #ffffe3;
+  background-color: hsl(60, 100%, 98%);
 }
 
 #contact-section #main-form p textarea {
@@ -291,7 +305,7 @@ html {
   padding: 10px 20px;
   border-radius: 50px;
   background-color: mediumseagreen;
-  color: white;
+  color: #eee;
   cursor: pointer;
   font-weight: 500;
   font-family: inherit;
@@ -301,7 +315,7 @@ html {
 }
 
 #contact-section #main-form p button:hover {
-  background-color: darkgreen;
+  opacity: 0.75;
 }
 
 
@@ -315,13 +329,15 @@ html {
 #main-footer h5 {
   padding: 15px 0 10px;
   font-size: 1.1rem;
+  color: #eee;
+  cursor: default;
 }
 
 #main-footer a {
   display: inline-block;
-  color: black;
+  color: #eee;
   margin: 0 7px 10px;
-  transition: 150ms ease-in-out;
+  transition: 100ms ease-in-out;
 }
 
 #main-footer a i {
@@ -329,7 +345,7 @@ html {
 }
 
 #main-footer a:hover {
-  color: white;
+  color: black;
 }
 
 

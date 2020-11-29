@@ -112,7 +112,6 @@ html {
 #about-section .about-para {
   display: flex;
   width: 50%;
-  font-size: 1.1rem;
   margin: 0 auto;
 }
 
@@ -121,12 +120,18 @@ html {
   width: 250px;
   display: inline-block;
   transform: rotate(360deg);
+  border-radius: 10px;
 }
 
 #about-section .about-para p {
   margin: 40px 40px 0;
   align-self: center;
-  line-height: 1.8;
+  line-height: 1.7;
+  cursor: default;
+  font-family: 'times new roman', serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 
 
@@ -219,6 +224,11 @@ html {
   color: black;
   font-size: 1.2rem;
   margin-top: 4%;
+  border-radius: 10px;
+}
+
+#projects-section .easybank {
+  background-image: url(../img/easybank.JPG);
 }
 
 #projects-section .dine-restaurant {

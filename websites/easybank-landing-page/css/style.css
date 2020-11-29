@@ -85,6 +85,10 @@ body {
     padding: 20px;
 }
 
+.menu-items {
+    min-width: 453.7px;
+}
+
 .menu-items .item {
     padding: 15px 15px 20px 15px;
     text-decoration: none;
@@ -105,6 +109,7 @@ body {
     padding: 15px 20px;
     border-radius: 50px;
     cursor: pointer;
+    min-width: 160px;
 }
 
 .invite-btn:hover {
@@ -184,6 +189,15 @@ body {
     padding-bottom: 50px;
 }
 
+.main-box .icon {
+    transition: opacity 0.15s ease-in-out;
+}
+
+.main-box .icon:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+
 .main-box h3 {
     font-weight: 400;
     font-size: 1.2rem;
@@ -218,10 +232,12 @@ body {
     width: 82%;
     margin: 30px auto;
     background-color: white;
+    transition: opacity 0.15s ease-in-out;
 }
 
 .latest-box:hover {
-    opacity: 0.5;
+    opacity: 0.75;
+    cursor: pointer;
 }
 
 .latest-box blockquote {
@@ -327,16 +343,6 @@ body {
 
 
 
-@media (min-width: 350px) {
-    .intro-bg h1,
-    .main-section-header,
-    .latest-section-header {
-        font-size: 2.1rem;
-    }
-}
-
-
-
 @media (min-width: 398px) {
 
     .intro-bg h1 {
@@ -379,13 +385,6 @@ body {
 
     .latest-box p {
         font-size: 0.9rem;
-    }
-}
-
-
-@media (min-width: 420px) {
-    .intro-bg h1 {
-        padding: 20px 50px;
     }
 }
 
@@ -622,20 +621,14 @@ body {
         line-height: 27px;
     }
 
-    .main-box .icon {
-        transition: opacity 0.15s ease-in-out;
-    }
 
-    .main-box .icon:hover {
-        opacity: 0.5;
-        cursor: pointer;
-    }
-    
+
     
     /* latest section */
     
     
     .latest-section {
+        cursor: default;
         display: flex;
         flex-direction: column;
         padding-bottom: 50px;
@@ -659,14 +652,9 @@ body {
         width: 20%;
         border-radius: 10px;
         background-color: white;
-        transition: opacity 0.15s ease-in-out;
         margin-left: 0;
     }
     
-    .latest-box:hover {
-        opacity: 0.75;
-        cursor: pointer;
-    }
     
     .latest-box blockquote {
         font-size: 1rem;
@@ -675,13 +663,13 @@ body {
     }
     
     .latest-box h4 {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
         padding: 10px 20px;
     }
     
     .latest-box p {
         padding: 10px 20px 20px 20px;
-        font-size: 0.8rem;
+        font-size: 1rem;
         line-height: 20px;
     }
     
@@ -692,9 +680,9 @@ body {
     
     .main-footer {
         display: flex;
-        flex-direction: column;
-        background-color: hsl(233, 26%, 24%);
-        
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 30px;
     }
     
     .section1,
@@ -706,20 +694,15 @@ body {
     }
     
     .section1 .footer-logo {
-        align-self: center;
-        padding: 15px;
-        
-    
+        padding: 20px 20px 20px 125px;
     }
-    
+
     .section1 .social {
-        display: flex;
-        justify-content: center;
+        padding: 10px 20px 20px 125px;
     }
     
     .section1 .social .fab {
         color: hsl(0, 0%, 98%);
-        padding: 10px 10px 30px 10px;
         font-size: 1.2rem;
     }
     
@@ -731,26 +714,31 @@ body {
     .section3 a {
         text-decoration: none;
         color: hsl(0, 0%, 98%);
-        align-self: center;
-        padding: 10px;
     }
     
     .section2 a:hover,
     .section3 a:hover {
         color: hsl(136, 65%, 51%);
     }
-    
+
     .section3 a:last-child {
-        padding-bottom: 35px;
+        padding-bottom: 10px;
     }
-    
+
     .section4 {
-        align-items: center;
-        padding: 10px 10px 50px 10px;
+        align-items: flex-end;
     }
     
+    .section4 .invite-btn {
+        margin: 10px 125px 0 10px;
+        padding: 15px 20px;
+        font-size: 1.05rem;
+    }
+
     .section4 p {
-        padding-top: 30px;
+        padding: 30px 125px 0 0;
+        font-size: 1rem;
+        font-weight: 300;
         color: hsl(0, 0%, 98%);
     }
     

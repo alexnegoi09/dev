@@ -238,7 +238,7 @@ body {
 
     .input::placeholder, .name, .date, .date::-webkit-calendar-picker-indicator, .how-many, .message {
         font-size: 1rem;
-        padding: 8px;
+        padding-left: 8px;
     }
 
     .btn {

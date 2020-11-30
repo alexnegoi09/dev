@@ -108,6 +108,7 @@ body, html {
         align-items: center;
         justify-content: space-evenly;
         padding: 2%;
+        margin-top: 30px;
         min-width: 240px;
     }
     
@@ -198,6 +199,10 @@ body, html {
         text-transform: uppercase;
         padding-bottom: 5px;
         text-align: center;
+    }
+
+    .open-times {
+        padding-top: 10px;
     }
     
     .address *, .open-times * {
@@ -348,7 +353,7 @@ body, html {
     
     .contact-info {
         flex-direction: row;
-        height: 15%;
+        height: 150px;
     }
     
     /* to be made responsive */

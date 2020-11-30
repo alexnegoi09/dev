@@ -133,6 +133,7 @@ body, html {
     min-width: 80%;
     border-top: 1px solid lightslategray;
     color: white;
+    line-height: 1.5rem;
 }
 
 .menu {
@@ -146,6 +147,8 @@ body, html {
 
 .menu-items {
     list-style-type: none;
+    margin: 20px auto;
+    line-height: 2.5rem;
 }
 
 
@@ -408,8 +411,8 @@ body, html {
 
         width: 90%;
         min-width: 100px;
-        line-height: 2rem;
-        font-size: 1.2rem;
+        line-height: 2.5rem;
+        font-size: 1.5rem;
     }
 
     .main-btn {
@@ -447,12 +450,13 @@ body, html {
         font-size: 1.4rem;
         min-width: 80%;
         text-align: center;
-        line-height: 1.5rem;
+        line-height: 2rem;
     }
 
     .about-para span {
         
         font-size: 1.4rem;
+        line-height: 2rem;
     }
 
     .about-2 {
@@ -471,12 +475,13 @@ body, html {
         align-self: center;
         font-size: 1.4rem;
         min-width: 80%;
-        line-height: 1.5rem;
+        line-height: 2rem;
     }
 
     .about-para-2 span {
 
         font-size: 1.4rem;
+        line-height: 2rem;
     }
 
 
@@ -495,7 +500,7 @@ body, html {
 
     .menu-para {
         font-size: 1.4rem;
-        line-height: 1.5rem;
+        line-height: 2rem;
         border-top: 1px solid lightslategray;
         color: white;
     }
@@ -586,20 +591,20 @@ body, html {
     .secondary-header {
         margin-left: 5%;
         margin-top: 2%;
-        width: 90%;
-        max-width: 800px;
+        width: 30%;
+        max-width: 700px;
         line-height: 2.5rem;
         font-size: 1.5rem;
     }
 
     .main-btn {
         margin: 3% 0 0 5%;
-        font-size: 1.5rem;
-        width: 25%;
-        max-width: 460px;
-        padding: 16px;
+        font-size: 1.2rem;
+        width: 24%;
+        padding: 1.2rem;
         background-color: rgba(0, 0, 0, 0.9);
         color: white;
+        letter-spacing: 2px;
     }
 
     .main-btn:hover {
@@ -638,7 +643,7 @@ body, html {
 
     .about-para span {
         margin-left: 50px;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         max-width: 550px;
     }
 
@@ -669,9 +674,9 @@ body, html {
 
     .about-para-2 span {
         width: 80%;
-        margin: 0 auto;
+        margin: 20px auto;
         text-align: center;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         display: block;
     }
 
@@ -702,13 +707,13 @@ body, html {
         font-size: 1.7rem;
         min-width: 20%;
         margin-bottom: 35px;
-        line-height: 3rem;
+        line-height: 2.5rem;
     }
 
     .menu {
         max-width: 550px;
-        font-size: 1.7rem;
-        line-height: 3.5rem;
+        font-size: 1.5rem;
+        line-height: 2.75rem;
         display: block;
         
         
@@ -727,7 +732,7 @@ body, html {
 
     .reservation h1 {
     
-        font-size: 2.2rem;
+        font-size: 2rem;
         text-align: center;
         margin: 1% 0 2% 0;
         width: 100%;
@@ -735,11 +740,12 @@ body, html {
 
     .second-btn {
         margin: 1% auto;
-        font-size: 1.7rem;
-        width: 20%;
-        padding: 16px;
+        font-size: 1.2rem;
+        width: 24%;
+        padding: 1.2;
         min-width: 255px;
         cursor: pointer;
+        letter-spacing: 2px;
     }
     
 
@@ -747,7 +753,7 @@ body, html {
 
     .contact-info {
         flex-direction: row;
-        height: 150px;
+        height: 10rem;
     }
     
     /* to be made responsive */
@@ -766,7 +772,7 @@ body, html {
     .address, .open-times {
         font-family: montserrat, sans-serif;
         font-weight: 100;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         text-transform: uppercase;
     }
     

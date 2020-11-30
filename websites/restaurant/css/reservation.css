@@ -18,7 +18,7 @@ body {
         padding-top: 3rem;
         padding-bottom: 1rem;
         font-size: 1.4rem;
-        font-family: merriweather, sans-serif;
+        font-family: 'times new roman', serif;
         font-weight: bold;
         font-style: italic;
         min-width: 240px;
@@ -34,12 +34,10 @@ body {
     
     .input {
         border: 1px solid black;
-        display: inline-block;
-        padding: 0.5%; 
-        width: 40%;
-        transition: background-color 0.3s ease-in-out;
+        text-transform: uppercase;
         color: black;
         cursor: pointer;
+
     }
     
     .input::placeholder, .name, .date, .date::-webkit-calendar-picker-indicator, .how-many, .message {
@@ -138,12 +136,12 @@ body {
 /* responsive */
 
 
-@media (min-width: 250px) {
+@media (min-width: 150px) {
     
     .main-header {
         width: 90%;
         margin: 0 auto;
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         padding-bottom: 0.5rem;
         text-align: center;
     }
@@ -212,10 +210,10 @@ body {
 /**/
 
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
     
     .main-header {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         padding-bottom: 1rem;
         text-align: left;
     }
@@ -232,7 +230,6 @@ body {
 
     .input {
         padding: 1.2%; 
-        width: 70%;
         max-width: 410px;
     }
 
@@ -275,11 +272,20 @@ body {
 
 
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
+
+    body {
+        background-image: url(../img/img6.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .main-header {
         padding-top: 3rem;
         padding-bottom: 1rem;
-        font-size: 1.4rem;
+        font-size: 1.7rem;
+        color: white;
     }
     
     .main-header, .form {
@@ -297,25 +303,36 @@ body {
         border: 1px solid black;
         display: inline-block;
         padding: 0.5%; 
-        width: 40%;
         transition: background-color 0.3s ease-in-out;
         color: black;
         cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.9);
+        letter-spacing: 1px;
     }
     
     .input::placeholder, .name, .date, .date::-webkit-calendar-picker-indicator, .how-many, .message {
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-family: montserrat, sans-serif;
         outline: 0;
     }
+
+    .name, .message {
+        width: 30%;
+        max-width: 1000px;
+    }
     
+    .how-many, .date {
+        width: 15%;
+        max-width: 500px;
+    }
+
     .message {
         resize: none;
         cursor: pointer;
     }
     
     .input:focus {
-        background-color: #fff9e8;
+        background-color: rgba(245, 248, 210, 0.9);
     }
     
     .input::placeholder {
@@ -323,7 +340,11 @@ body {
     }
     
     .btn {
-        width: 14%;
+        width: 15%;
+        font-size: 1.2rem;
+        padding: 1.2rem;
+        letter-spacing: 2px;
+        max-width: 700px;
     }
     
     .btn:hover {
@@ -333,25 +354,13 @@ body {
         border: 1px solid black;
     }
     
-    /* to be fixed */
-    
-    .how-many, .date {
-        width: 15%;
-        min-width: 180px;
-    }
-    
-    .name, .message {
-        width: 37%;
-        min-width: 30%;
-    }
-    
-    /* to be fixed */
+
     
     /* contact section */
     
     .contact-info {
         flex-direction: row;
-        height: 150px;
+        height: 10rem;
     }
     
     /* to be made responsive */
@@ -370,7 +379,7 @@ body {
     .address, .open-times {
         font-family: montserrat, sans-serif;
         font-weight: 100;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         text-transform: uppercase;
     }
     

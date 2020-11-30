@@ -354,7 +354,6 @@ html {
 @media screen and (max-width: 1200px) {
   body, html {
     min-width: 400px;
-    overflow-x: hidden;
   }
 
   #navbar {

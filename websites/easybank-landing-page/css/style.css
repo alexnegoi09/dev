@@ -20,7 +20,10 @@ body {
     border-bottom: 1px solid black;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
 }
 
 .logo-sm {
@@ -43,9 +46,10 @@ body {
     text-align: center;
     position: fixed;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     transform: translateY(-500px);
     transition: transform 0.3s ease-in-out;
+    z-index: 10;
 }
 
 .item-sm {
@@ -97,7 +101,7 @@ body {
 }
 
 .menu-items .item:hover {
-    border-bottom: 3px solid hsl(192, 70%, 51%);
+    border-bottom: 4px solid hsl(192, 70%, 51%);
 }
 
 .invite-btn {
@@ -191,6 +195,8 @@ body {
 
 .main-box .icon {
     transition: opacity 0.15s ease-in-out;
+    position: relative;
+    z-index: 1;
 }
 
 .main-box .icon:hover {
@@ -341,6 +347,10 @@ body {
     .latest-section-header {
         font-size: 1.75rem;
     }
+
+    .menu-items-sm {
+        top: 50px;
+    }
 }
 
 
@@ -388,6 +398,8 @@ body {
     .latest-box p {
         font-size: 0.9rem;
     }
+
+   
 }
 
 
@@ -475,6 +487,10 @@ body {
         align-self: center;
         transform: scale(1.2);
     }
+
+    .menu-items-sm {
+        top: 80px;
+    }
 }
 
 
@@ -516,6 +532,10 @@ body {
         display: flex;
         justify-content: space-between;
         padding-bottom: 5px;
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        z-index: 10;
     }
 
     .navbar .logo {

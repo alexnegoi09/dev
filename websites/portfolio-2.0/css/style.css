@@ -121,7 +121,6 @@ html {
   height: 400px;
   width: 275px;
   display: inline-block;
-  transform: rotate(360deg);
   border-radius: 10px;
   transition: opacity 100ms ease-in-out;
 }

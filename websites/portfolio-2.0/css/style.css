@@ -385,6 +385,7 @@ html {
 
   #about-section .about-para {
     flex-direction: column;
+    width: 75%;
   }
 
   #about-section .about-para img {
@@ -395,9 +396,9 @@ html {
   }
 
   #about-section .about-para p {
-    width: 100%;
-    min-width: 320px;
-    align-self: center;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   #skills-header {

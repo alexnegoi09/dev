@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,900&family=Montserrat:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: spartan, sans-serif;
 }
 
 body, html {
@@ -23,23 +24,20 @@ body, html {
 .main-title {
     display: block;
     margin: 2.5% 0 0 5%;
-    font-family: merriweather, serif;
     color: white;
 }
 
 .main-header {
-    font-family: 'times new roman', sans-serif;
     font-weight: 200;
-    font-style: italic;
     margin: 15% 0 0 5%;
+    font-family: 'times new roman', serif;
+    font-style: italic;
     color: white;
 }
 
 .secondary-header {
     margin: 10% 0 0 5%;
-    font-family: montserrat, sans-serif;
-    font-weight: 200;
-    font-size: 1rem;
+    font-weight: 300;
     color: white;
 }
 
@@ -47,7 +45,7 @@ body, html {
     text-decoration: none;
     display: block;
     margin: 5% auto;
-    font-family: montserrat, sans-serif;
+    font-family: spartan, sans-serif;
     text-align: center;
     color: white;
     text-transform: uppercase;
@@ -63,6 +61,7 @@ body, html {
     opacity: 0.8;
     margin-bottom: 4%;
     border-radius: 7px;
+    box-shadow:  0 20px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 .about-2 {
@@ -70,17 +69,14 @@ body, html {
 }
 
 .about-para {
-    font-family: merriweather, sans-serif;
     font-weight: 600;
     border-top: 1px solid lightslategray;
     margin-top: 4%;
 }
 
 .about-para span {
-    font-family: montserrat, sans-serif;
     font-weight: 100;
     display: inline-block;
-    
     margin-top: 20px;
 }
 
@@ -91,17 +87,16 @@ body, html {
     opacity: 0.9;
     margin-bottom: 4%;
     border-radius: 7px;
+    box-shadow:  0 20px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 .about-para-2 {
-    font-family: merriweather, sans-serif;
     font-weight: 600;
     border-top: 1px solid lightslategray;
     margin-top: 4%;
 }
 
 .about-para-2 span {
-    font-family: montserrat, sans-serif;
     font-weight: 100;
     display: inline-block;
     margin-top: 20px;
@@ -127,7 +122,6 @@ body, html {
 }
 
 .menu-para {
-    font-family: merriweather, sans-serif;
     font-weight: 600;
     margin-top: 4%;
     min-width: 80%;
@@ -137,7 +131,6 @@ body, html {
 }
 
 .menu {
-    font-family: montserrat, sans-serif;
     color: white;
     list-style: none;
     font-weight: 100;
@@ -162,7 +155,6 @@ body, html {
 }
 
 .reservation h1 {
-    font-family: montserrat, sans-serif;
     font-weight: 200;
     text-align: center;
     min-width: 20%;
@@ -173,7 +165,6 @@ body, html {
 .second-btn {
     text-decoration: none;
     text-align: center;
-    font-family: montserrat, sans-serif;
     color: black;
     text-transform: uppercase;
     border: 1px solid black;
@@ -573,7 +564,7 @@ body, html {
 /**/
 
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     .main-container {
         background-image: url(../img/img1.jpg);
     }
@@ -785,10 +776,3 @@ body, html {
     }
 
 }
-    
-
-
-
-
-
-

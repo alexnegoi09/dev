@@ -9,7 +9,7 @@
 
 body {
   font-family: roboto, arial, sans-serif;
-  background-color: #eee;
+  background-image: url(../img/floor-tile.png);
 }
 
 html {
@@ -123,6 +123,7 @@ html {
   display: inline-block;
   border-radius: 10px;
   transition: opacity 100ms ease-in-out;
+  box-shadow: 2px 1px 5px black;
 }
 
 #about-section .about-para img:hover {
@@ -139,7 +140,8 @@ html {
   font-weight: bold;
   font-size: 1.2rem;
   text-align: center;
-  min-width: 180px;
+  min-width: 200px;
+  max-width: 450px;
 }
 
 
@@ -173,19 +175,19 @@ html {
 
 #skills-subsection span {
   display: inline-block;
-  background-color: mediumseagreen;
+  background-color: green;
   border-radius: inherit;
   height: 100%;
   padding: 5px 0 5px 15px;
-  color: white;
   font-size: 1rem;
   letter-spacing: 2px;
+  color: white;
   transition: 120ms ease-in-out;
   text-shadow: 2px 1px 1px #000;
 }
 
 #skills-subsection span:hover {
-  background-color: darkgreen;
+  background-color: rgba(0, 128, 0, 0.75);
 }
 
 #skills-subsection .html-bar span {
@@ -293,7 +295,8 @@ html {
 }
 
 #contact-section #main-form p .form-styling:focus {
-  background-color: hsl(60, 100%, 98%);
+  background-color: rgb(254, 255, 249);
+  border: 0.75px solid green;
 }
 
 #contact-section #main-form p textarea {
@@ -304,10 +307,9 @@ html {
   border: none;
   padding: 10px 20px;
   border-radius: 50px;
-  background-color: mediumseagreen;
+  background-color: green;
   color: #eee;
   cursor: pointer;
-  font-weight: 500;
   font-family: inherit;
   font-size: 1.2rem;
   outline: none;
@@ -322,7 +324,7 @@ html {
 /* footer */
 
 #main-footer {
-  background-color: mediumseagreen;
+  background-color: green;
   text-align: center;
 }
 
@@ -360,17 +362,13 @@ html {
     position: static;
     flex-flow: column;
     height: auto;
+    background-color: #eee !important;
   }
 
   #navbar > p a {
     color: black !important;
     display: block;
     font-size: 1.25rem !important;
-  }
-
-  #navbar > p a:hover {
-    color: black;
-    background-color: mediumseagreen;
   }
 
   #main-image-container {

@@ -296,7 +296,7 @@ html {
 
 #contact-section #main-form p .form-styling:focus {
   background-color: rgb(254, 255, 249);
-  border: 0.75px solid green;
+  border: 1px solid green;
 }
 
 #contact-section #main-form p textarea {

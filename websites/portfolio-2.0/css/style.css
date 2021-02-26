@@ -260,6 +260,10 @@ html {
   background-image: url(../img/calculator.jpg);
 }
 
+#projects-section .scroll-detection {
+  background-image: url(../img/scroll-detection.JPG);
+}
+
 
 /* projects section - animation */
 

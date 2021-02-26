@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+  }
+  
+.test {
+    min-height: 100px;
+    width: 75%;
+    background-color: antiquewhite;
+    margin: 2rem auto;
+    padding: 10px 10px 20px 10px;
+    border: 2px solid black;
+  }
+  
+.styled {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+  }
+  
+.up {
+    background-color: green;
+  }
+  
+.down {
+    background-color: red;
+  }
+  
+  
+.title {
+      color: green;
+    }
+  
+.title, .para {
+      width: 75%;
+      margin: 2rem auto;
+      text-align: center;
+    }
+    
